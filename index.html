@@ -3,27 +3,32 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Cats Of Campus</title>
+		<link rel="stylesheet" href="style.css">
 	</head>
 
 	<body>
 		<div id="header">
-			<h1>Cats of Campus</h1>
-			<img src="images/banner.jpg" alt="cat banner">
-			<!--Links-->
-			<ul>
-				<li><a href="#gingerbell">Gingerbell</a></li>
-				<li><a href="#boss">Boss</a></li>
-				<li><a href="#solo">Solo</a></li>
-				<li><a href="#catmemes">Cat Memes</a></li>
-			</ul>
+			<div class="title">
+				<h1>Cats of Campus</h1>
+				<!--<img src="images/banner.jpg" alt="cat banner">-->
+				<!--Links-->
+				<ul> <!--maybe add style="border: 2px solid black"-->
+					<li><a href="#gingerbell">Gingerbell</a></li>
+					<li><a href="#boss">Boss</a></li>
+					<li><a href="#solo">Solo</a></li>
+					<li><a href="#catmemes">Cat Memes</a></li>
+				</ul>
+
+			</div>
+			
 
 		</div>
 
 		<div id="main">
 			<!--Cat1-->
-			<div>
+			<div class = "section">
 				<img src="images/gingerbell.png" alt="gingerbell" id ="gingerbell"> <!--id links to a tag above-->
-				<div>
+				<div class = "desc">
 					<h3>Gingerbell</h3>
 					<h5>Orange you glad I'm here</h5>
 					<p>Gingerbell likes people but not other cats. She also likes eating ginger, for some reason.</p>
@@ -31,9 +36,9 @@
 				</div>
 			</div>
 			<!--Cat2-->
-			<div>
+			<div class = "section">
 				<img src="images/boss.png" alt="boss" id ="boss"> <!--id links to a tag above-->
-				<div>
+				<div class = "desc">
 					<h3>Boss</h3>
 					<h5>I'm the boss, no doubt about it</h5>
 					<p>All you hoomans are below me. Bow before my presence!</p>
@@ -41,9 +46,9 @@
 				</div>
 			</div>
 			<!--Cat3-->
-			<div>
+			<div class = "section">
 				<img src="images/solo.png" alt="solo" id ="solo"> <!--id links to a tag above-->
-				<div>
+				<div class = "desc">
 					<h3>Solo</h3>
 					<h5>I always ride solo.</h5>
 					<p>My favorite things:</p>
@@ -55,9 +60,11 @@
 				</div>
 			</div>
 			<!--YouTube Video-->
-			<div id = "catmemes">
-				<h3>Here is a compilation of cat memes for you. Thank you for visitng our webpage!</h3>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/n4rhAy3ueVE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<div  class = "section">
+				<div class = "desc2" id = "catmemes">
+					<h3>Here is a compilation of cat memes for you. Thank you for visitng our webpage!</h3>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/n4rhAy3ueVE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
 			</div>
 
 		</div>

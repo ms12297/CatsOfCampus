@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+html{
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+}
+
+body , h1, h2, h3, h4, h5, h6{
+	margin: 0;
+}
+body{
+	text-align: center;
+	background-color: aliceblue;
+}
+
+ul{
+	list-style: none;
+	margin: 0;
+	padding:  0;
+}
+
+a{
+	text-decoration: none;
+	color: coral;
+}
+
+a:hover{
+	color: blue;
+}
+
+#header{
+	background-image: url("images/banner.jpg");
+	background-position: center;
+	height: 200px;
+	text-align: center;
+}
+
+.title{
+	background-color: aliceblue;
+	display: inline-block;
+	padding: 10px;
+}
+
+.title ul{
+	display: flex;
+	justify-content: center;
+}
+
+.title ul li{
+	margin: 10px;
+}
+
+#main {
+	display: inline-block;
+	text-align: left;
+}
+
+.section{
+	display:  flex;
+	margin:  20px;
+	filter:  drop-shadow(2px 2px 4px #888888);
+	background-color: aliceblue;
+}
+
+.section:hover{
+	background-color: bisque;
+}
+
+.section img{
+	width:  200px;
+}
+.section iframe{
+	margin: 20px;
+	justify-content: center;
+	margin-left: 130px;
+}
+
+.desc{
+	padding:  20px;
+}
+.desc2{
+	padding:  20px;
+}
+
+.desc h3{
+	font-size: 2rem;
+}
+.desc2 h3{
+	font-size: 1.5rem;
+}
+
+.desc h5{
+	font-size: 1rem;
+	margin-top: 5px;
+}
+
+#footer {
+	position: fixed;
+	bottom: 0;
+	width:  100%;
+	background-color: coral;
+	text-align: left;
+	display: flex;
+	justify-content: space-between;
+}
