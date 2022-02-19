@@ -132,5 +132,7 @@ a:hover{
 }
 
 .overlay ul{
+	font-size: 30px;
 	padding:  20px;
 	text-align: center;
+}
