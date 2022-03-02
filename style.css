@@ -31,14 +31,17 @@ a:hover{
 #header{
 	background-image: url("images/banner.jpg");
 	background-position: center;
-	height: 200px;
+	height: 600px;
 	text-align: center;
+	display: flex;
 }
-
 .title{
 	background-color: aliceblue;
 	display: inline-block;
+	align-self: center;
+	margin-left: calc(40% + 30px);
 	padding: 10px;
+	height: 75px;
 }
 
 .title:hover{
@@ -61,14 +64,14 @@ a:hover{
 
 .section{
 	display:  flex;
-	margin:  20px;
+	margin:  100px;
 	filter:  drop-shadow(2px 2px 4px #888888);
 	background-color: aliceblue;
 }
 .section2{
 	display:  flex;
 	flex-direction: column; /*IMPORTANT*/
-	margin:  20px;
+	margin:  100px;
 	padding: 20px;
 	filter:  drop-shadow(2px 2px 4px #888888);
 	background-color: aliceblue;

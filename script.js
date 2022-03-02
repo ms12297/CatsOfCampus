@@ -75,4 +75,32 @@ for(let i = 0; i < section2.length; i++)
   });
 }
 
+var sound = new Howl({
+      src: ['meow.mp3']
+    });
 
+$('#main .section').each(function(index, element) {
+  element = $(element);
+  //console.log("index:", index, element);
+  index += 1;
+  //console.log(index);
+
+  element.click(function (){
+
+    sound.play();
+  })
+
+  if (index % 2 == 0){
+    element.attr("data-aos", "fade-right");
+  }
+  else {
+    element.attr("data-aos", "fade-left");
+  }
+});
+
+$('#main .section2').each(function(index, element) {
+  element = $(element);
+  element.attr("data-aos", "fade-right");
+});
+
+AOS.init();
