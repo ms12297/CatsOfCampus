@@ -9,11 +9,17 @@
 		<script src = "jquery-3.6.0.min.js"></script>
 		<script src="howler.min.js"></script>
 		<script src="script.js" defer></script>
-
-
+		<script src="Tone.js" charset="utf-8"></script>
 	</head>
 
 	<body>
+
+		<audio id="drums">
+			<source src="sounds/drums.mp3" type="audio/mpeg">
+			<source src="/media/audio.ogg" type="audio/ogg">
+					Error message! This doesn't work.
+		</audio>
+
 		<div id="header">
 			<div class="title">
 				<h1>Cats of Campus</h1>
@@ -34,7 +40,7 @@
 
 		<div id="main">
 			<!--Cat1-->
-			<div class = "section">
+			<div class = "section" id="1">
 				<img src="images/gingerbell.png" alt="gingerbell" id ="gingerbell"> <!--id links to a tag above-->
 				<div class = "desc">
 					<h3>Gingerbell</h3>
@@ -44,7 +50,7 @@
 				</div>
 			</div>
 			<!--Cat2-->
-			<div class = "section">
+			<div class = "section" id="2">
 				<img src="images/boss.png" alt="boss" id ="boss"> <!--id links to a tag above-->
 				<div class = "desc">
 					<h3>Boss</h3>
@@ -54,7 +60,7 @@
 				</div>
 			</div>
 			<!--Cat3-->
-			<div class = "section">
+			<div class = "section" id="3">
 				<img src="images/solo.png" alt="solo" id ="solo"> <!--id links to a tag above-->
 				<div class = "desc">
 					<h3>Solo</h3>

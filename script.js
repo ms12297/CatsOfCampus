@@ -104,3 +104,39 @@ $('#main .section2').each(function(index, element) {
 });
 
 AOS.init();
+
+
+//Interactive Sounds
+
+var drums = document.getElementById("drums");
+var intro = document.querySelector('.overlay');
+
+intro.addEventListener('click', function(){
+  intro.classList.add('hidden');
+  drums.play();
+});
+
+//drums.play(); //wont work because interaction required
+const autoWah = new Tone.AutoWah(50, 6, -30).toDestination();
+autoWah.Q.value = 6;
+const synth = new Tone.Synth().connect(autoWah);
+
+//sections = document.querySelectorAll('.section');
+const arr = ["C4", "D4", "E4"];
+for(let i = 0; i < sections.length; i++)
+{
+  //background colour reverts to bisque when mouse leaves
+  sections[i].addEventListener('mouseenter', function(){
+    synth.triggerAttackRelease(arr[i], "8n");
+  });
+}
+
+//Doing the same colour variation effect for section2 div
+for(let i = 0; i < section2.length; i++)
+{
+  //background colour reverts to bisque when mouse leaves
+  section2[i].addEventListener('mouseenter', function(){
+    synth.triggerAttackRelease("C5", "8n");
+  });
+}
+
